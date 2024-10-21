@@ -35,3 +35,27 @@
 .navbar a:hover {
   text-decoration: underline;
 }
+
+section {
+  padding: 50px 100px;
+}
+
+.headquarter-container {
+  display: flex;
+}
+
+.headquarter-item {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.headquarter-item img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}

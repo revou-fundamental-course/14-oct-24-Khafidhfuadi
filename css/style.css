@@ -1,13 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: "Rethink Sans", sans-serif;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #000000;
+  padding: 20px;
+  background-color: salmon;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* make bold drop shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar img {
@@ -23,11 +31,10 @@
 
 .navbar li {
   padding: 5px 30px;
-  border: 1px solid #000000;
 }
 
 .navbar a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 16px;
 }
@@ -40,8 +47,18 @@ section {
   padding: 50px 100px;
 }
 
+section#hero img {
+  /* make it center */
+  width: 700px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 50px;
+}
+
 .headquarter-container {
   display: flex;
+  justify-content: center;
 }
 
 .headquarter-item {
@@ -52,10 +69,115 @@ section {
   text-align: center;
 }
 
-.headquarter-item img {
+.headquarter-img {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 12px;
+}
+
+.headquarter-item img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.headquarter-img img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.form-section {
+  padding: 20px;
+  border: 1px solid #000;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Transparent background for the form */
+  min-width: 350px;
+}
+/* 
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+} */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+td:first-child {
+  text-align: right;
+  font-weight: bold;
+  width: 120px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.output-section {
+  padding: 20px;
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent background */
+  min-width: 300px;
+}
+
+.output-section table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Transparent background for the output table */
+  border: 1px solid #000;
+}
+
+.output-section td {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.output-section td:first-child {
+  font-weight: bold;
 }

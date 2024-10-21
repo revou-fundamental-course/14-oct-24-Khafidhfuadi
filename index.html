@@ -19,28 +19,91 @@
     </ul>
   </div>
   <section id="hero">
-    <h2>Hi, Khafidh. Welcome to Website</h2>
+    <h1>Hi, Khafidh. Welcome to Website</h1>
     <p>Ini adalah website latihan pertama</p>
-    <img src="img/hero-img.jpg" width="70%" alt="">
+    <img src="img/hero-img.jpg" alt="">
   </section>
   <section id="headquarter">
-    <h2>Headquarter</h2>
+    <h1>Headquarter</h1>
     <div class="headquarter-container">
       <div class="headquarter-item">
-        <img src="img/jakarta.jpg" alt="">
+        <div class="headquarter-img">
+          <img src="img/jakarta.jpg" alt="">
+        </div>
         <p>Jakarta</p>
       </div>
       <div class="headquarter-item">
-        <img src="img/bandung.jpg" alt="">
+        <div class="headquarter-img">
+          <img src="img/bandung.jpg" alt="">
+        </div>
         <p>Bandung</p>
       </div>
       <div class="headquarter-item">
-        <img src="img/surabaya.jpg" alt="">
+        <div class="headquarter-img">
+          <img src="img/surabaya.jpg" alt="">
+        </div>
         <p>Surabaya</p>
       </div>
     </div>
-
   </section>
+  <div class="container">
+    <div class="form-section">
+      <h2>Message Us</h2>
+      <form id="messageForm">
+        <table>
+          <tr>
+            <td><label for="name">Nama:</label></td>
+            <td><input type="text" id="name" name="name" placeholder="Nama" required></td>
+          </tr>
+          <tr>
+            <td><label for="dob">Tanggal Lahir:</label></td>
+            <td><input type="date" id="dob" name="dob" required></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Jenis Kelamin:</label></td>
+            <td>
+              <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+              <label for="male">Laki-Laki</label>
+              <input type="radio" id="female" name="gender" value="Perempuan" required>
+              <label for="female">Perempuan</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="message">Pesan:</label></td>
+            <td><textarea id="message" name="message" placeholder="Pesan" required></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center;"><button type="submit">Submit</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <div class="output-section">
+      <table>
+        <tr>
+          <td><strong>Current time :</strong></td>
+          <td id="currentTime"></td>
+        </tr>
+        <tr>
+          <td><strong>Nama :</strong></td>
+          <td id="outputName"></td>
+        </tr>
+        <tr>
+          <td><strong>Tanggal Lahir :</strong></td>
+          <td id="outputDob"></td>
+        </tr>
+        <tr>
+          <td><strong>Jenis Kelamin :</strong></td>
+          <td id="outputGender"></td>
+        </tr>
+        <tr>
+          <td><strong>Pesan :</strong></td>
+          <td id="outputMessage"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </body>
 
 </html>

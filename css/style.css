@@ -196,7 +196,7 @@ section#our-profile .heading {
     1px 1px 0 black;
   font-size: 48px;
   font-weight: 700;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
   z-index: 1;
   pointer-events: none;
   display: none;
@@ -207,13 +207,21 @@ section#our-profile .heading {
   height: 250px;
   object-fit: cover;
   object-position: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
   z-index: 0;
   filter: grayscale(100%);
 }
 
 .headquarter-img:hover p {
   display: block;
+  opacity: 0;
+  animation: dissolveIn 0.5s forwards;
+}
+
+@keyframes dissolveIn {
+  to {
+    opacity: 1;
+  }
 }
 
 .headquarter-img img:hover {

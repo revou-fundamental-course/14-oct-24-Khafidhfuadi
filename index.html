@@ -122,9 +122,10 @@
             <tr>
               <td><strong>Jenis Kelamin</strong></td>
               <td id="outputGender">
-                <strong>:</strong><input type="radio" name="laki-laki" id="laki-laki" value="Laki-laki" required>
+                <strong>:</strong>
+                <input type="radio" name="gender" id="laki-laki" value="Laki-laki" required>
                 <label for="laki-laki">Laki-laki</label>
-                <input type="radio" name="perempuan" id="perempuan" value="Perempuan" required>
+                <input type="radio" name="gender" id="perempuan" value="Perempuan" required>
                 <label for="perempuan">Perempuan</label>
               </td>
             </tr>
@@ -137,6 +138,16 @@
           </table>
           <button type="submit">Submit</button>
         </form>
+      </div>
+      <div class="output-container">
+        <h3>Output</h3>
+        <div class="output">
+          <p>Current Time : <span id="currentTime"></span></p>
+          <p>Nama : <span id="outputName"></span></p>
+          <p>Tanggal Lahir : <span id="outputDob"></span></p>
+          <p>Jenis Kelamin : <span id="outputGender"></span></p>
+          <p>Pesan : <span id="outputMessage"></span></p>
+        </div>
       </div>
     </div>
   </section>

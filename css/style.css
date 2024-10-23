@@ -198,7 +198,7 @@ td {
   padding: 10px;
 }
 
-td#outputMessage {
+td#textarea {
   display: flex;
   align-items: start;
 }

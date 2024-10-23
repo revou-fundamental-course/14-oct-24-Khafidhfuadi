@@ -1,6 +1,16 @@
 document.getElementById("name").textContent = `Khafidh`;
 
 document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  // Toggle menu visibility on hamburger click
+  hamburger.addEventListener("click", function () {
+    navLinks.classList.toggle("show");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("messageForm");
   form.addEventListener("submit", function (event) {
     event.preventDefault();

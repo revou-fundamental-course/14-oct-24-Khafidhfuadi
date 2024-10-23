@@ -67,7 +67,6 @@ p {
   text-decoration: underline;
 }
 
-/* Hamburger icon styling */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -91,7 +90,6 @@ section {
 }
 
 section#hero img {
-  /* make it center */
   width: 700px;
   display: block;
   margin: 0 auto;
